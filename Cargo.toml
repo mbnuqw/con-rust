@@ -1,0 +1,7 @@
+[package]
+name = "con"
+version = "0.1.1"
+authors = ["mbnuqw <maxbadryzlov@gmail.com>"]
+
+[dependencies]
+rand = "0.5"
