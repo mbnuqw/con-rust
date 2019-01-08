@@ -210,7 +210,6 @@ impl<T: Sync + Send + 'static> Client<T> {
                     Some(b) => Some(String::from_utf8_lossy(&b).to_string()),
                     None => None,
                 };
-                println!(" → Handshaked! {:?}", self.id);
             }
             MsgReading::Stop
         });

@@ -209,7 +209,6 @@ impl<T: Send + Sync + 'static> Server<T> {
 
         // Handle incoming connections
         for conn in listener.incoming() {
-            println!(" → Incomming connection");
             match conn {
                 Ok(s) => {
                     let stream = ConStream::new_tcp(s);
@@ -232,7 +231,6 @@ impl<T: Send + Sync + 'static> Server<T> {
 
         // Handle incoming connections
         for conn in listener.incoming() {
-            println!(" → Incomming connection");
             match conn {
                 Ok(s) => {
                     let stream = ConStream::new_unix(s);
